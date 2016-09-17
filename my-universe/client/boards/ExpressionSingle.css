@@ -1,0 +1,72 @@
+.expressionSingle .card card-title
+{
+margin-left: 10px;   
+}
+
+.expressionSingle .card ul.list-group li.list-group-item
+{
+background-color: #ffffff;
+-webkit-transition: all 0.75s;
+-moz-transition: all 0.75s;
+transition: all 0.75s;
+border-left: 3px solid rgb(245, 245, 245);
+color: #1C7EBB;
+font-size: 18px;
+}
+
+.expressionSingle .card ul.list-group li.list-group-item:hover
+{
+background-color: #f5f5f5;
+text-decoration: none;
+background-color: #FAFAFA;
+border-left: 3px solid #555555;
+color: #1C7EBB;
+}
+.expressionSingle .card ul.list-group li.list-group-item a
+{
+-webkit-transition: all 0.75s;
+-moz-transition: all 0.75s;
+transition: all 0.75s;
+}
+
+
+.expressionSingle .card ul.list-group li.list-group-item a:hover
+{
+text-decoration: none;
+color: blue;
+color: #1C7EBB;
+}
+
+
+expressionSingle .card ul.list-group li.list-group-item i
+{ 
+margin-right: 10px;
+margin-left: -10px;
+}
+
+.mail-info span 
+{
+list-style: none;
+}
+
+.mail-info span:before 
+{
+content: '| \0000a0';
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.mail-info span
+{
+margin-left: 10px;   
+margin-right: 10px; 
+}
+
+.expressionSingle .mail-content {
+    min-height: 500px;
+    margin-left: 10px; 
+}
+
+.divider {
+    border-bottom: 2px solid #E5E5E5;
+}

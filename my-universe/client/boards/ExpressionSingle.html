@@ -1,0 +1,31 @@
+<template name="ExpressionSingle">
+<div class="expressionSingle">
+<div class="card" style="width:100%">
+<div class="card-block">
+<h5 class="card-title">  {{expression.title}} </h5>
+</div>          
+                    <div class="mail-header">
+							<div class="pull-right">
+								<a href="#/mail/compose" class="btn btn-sm btn-default">Reply <i class="fa fa-mail-reply"></i></a>
+								<a href="javascript:;" class="btn btn-sm btn-default"><i class="fa fa-print"></i></a>
+								<a href="javascript:;" class="btn btn-sm btn-default"><i class="fa fa-trash-o"></i></a>
+							</div>
+					</div>
+
+					<div class="mail-info">
+                        <div class="pull-left">
+                                <span class=""><i class="fa fa-calendar-o"></i>8/28/2013</span>
+                                <span class=""><i class="fa fa-user"></i>{{expression.userName}}</span>
+                                <span class=""><i class="glyphicon glyphicon-bookmark"></i><a href="http://localhost:8080/Utilities/xmlKnowledgeBase23/index.asp?displayCategory=yes&id=Gateway">Gateway</a></span>
+                                <span class=""><i class="fa fa-star"></i>33 views </span>
+                        </div>
+					</div>
+                    <br><br>
+                    <div class="divider"></div>
+                    <br><br>
+					<div class="mail-content">
+						{{expression.content}}
+					</div>
+</div>
+</div>
+</template>

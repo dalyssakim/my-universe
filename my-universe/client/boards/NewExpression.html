@@ -1,0 +1,43 @@
+<template name="NewExpression">
+
+
+<div class="new-expression-container">
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form class="form-group" id="expressionForm">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title subCategoryName" id="{{subcategory._id}}" value="{{subcategory.name}}">{{subcategory.name}}</h4>
+      </div>
+      <div class="modal-body">
+          <input  id="title" class="form-control" type="text" name="title" placeholder="Title" required>
+          <p></p>
+          <textarea class="form-control" rows="5" form="expressionForm" type="text" id="content" name="content" placeholder="Write here.."> </textarea> <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" form="expressionForm" class="btn btn-primary" value="Submit" >Post</button>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Original
+        <div class="new-expression-container">
+        <form id="expressionForm">
+            Sub-Category:<span class="subCategoryName" id="{{subcategory._id}}" value="{{subcategory.name}}">{{subcategory.name}}</span> <p></p>
+            Title:<input type="text" id="title" name="title"> <p></p>
+            Content:<textarea form="expressionForm" type="text" id="content" name="content"> </textarea> <p></p>
+            <button type="submit" form="expressionForm" value="Submit">Post</button>
+        </form>
+    </div>
+    -->
+</template>

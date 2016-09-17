@@ -1,0 +1,20 @@
+<template name="MyUniverse">
+ <div class="card-columns">
+<div class="card">
+<div class="card-block">
+<h5 class="card-title">  My Interest </h5>
+<!-- <p class="card-text">{{desc}}</p> -->
+  </div>
+    {{#if Template.subscriptionsReady}}
+ <ul class="list-group list-group-flush">
+      {{#each subCategories}}
+            {{> SubCategory}}
+        {{/each}}
+ </ul>
+    {{else}}
+        <p>Loading</p>
+    {{/if}}
+</div>
+ </div>
+
+</template>

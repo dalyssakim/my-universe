@@ -1,0 +1,17 @@
+<template name="MainLayout">
+    {{> SideNav}}
+    <main class="main-layout">
+        <div class="container-fluid">
+         <div class="row">
+         <div class="col-sm-10 col-md-10">
+        {{> Template.dynamic template=main}}
+        </div>
+        
+         <div class="col-sm-0 col-md-2">
+                 {{> NotificationPanel}}
+         </div>   
+        </div>
+    </div>
+    </main>
+        
+</template>

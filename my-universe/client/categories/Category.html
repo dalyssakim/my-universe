@@ -1,0 +1,17 @@
+<template name="Category">
+<div class="card">
+<div class="card-block">
+<h5 class="card-title">  {{name}} </h5>
+<!-- <p class="card-text">{{desc}}</p> -->
+  </div>
+ <ul class="list-group list-group-flush">
+           {{#if Template.subscriptionsReady}}
+            {{#each subCategories}}
+              {{> SubCategory}}
+            {{/each}}
+             {{else}}
+        <p>Loading</p>
+      {{/if}}
+        </ul>
+</div>
+</template>

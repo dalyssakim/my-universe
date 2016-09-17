@@ -1,0 +1,15 @@
+<template name="SubCategoriesAdmin">
+    <div class="new-subcategory-container">
+        <form id="subCategoryForm">
+            <select id="category-select" name="categorySelect">
+            Categories:<option disabled="disabled" selected="selected">Select Category</option>
+            {{#each categories}}
+                <option value="{{_id}}">{{name}}</option>
+            {{/each}}
+            </select>
+            SubCategory:<input type="text" id="subCategoryName" name="subCategoryName">
+            Description:<input type="text" id="subCategoryDescription" name="subCategoryDescription">
+            <button type="submit" form="subCategoryForm" value="Submit">Create Category</button>
+        </form>
+    </div>
+</template>
