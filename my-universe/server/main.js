@@ -46,4 +46,29 @@ Meteor.startup(() => {
     }
   });
 
+    Meteor.methods({
+    'updateThumbs' : function(param) {
+        console.log('UserId ', Meteor.userId());
+        console.log('Article ID ', param.articleId);
+        console.log('Thumbs ', param.thumb);
+        var userId = Meteor.userId();
+        var articleId = param.articleId;
+        var thumbs = param.thumb;
+        var thumbField;
+        if( thumbs == 'thumbsUp') {
+            Expressions.update(
+              { _id : articleId}
+              ,
+              {    $addToSet: { thumbsUp:userId } }
+              );
+        } else if( thumbs == 'thumbsDown') {
+             Expressions.update(
+              { _id : articleId}
+              ,
+              {    $addToSet: { thumbsDown:userId } }
+              );
+        }
+}
+  });
+
 });

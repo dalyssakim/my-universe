@@ -37,19 +37,27 @@ ExpressionSchema = new SimpleSchema({
         type: String
     },
     categoryId: {
-        type: String,
+        type: String
     },
     category: {
         type: String
     },
     subCategoryId: {
-        type: String,
+        type: String
     },
     subCategory: {
         type: String
     },
     viewCount: {
         type: Number, defaultValue: 0
+    },
+    thumbsUp: {
+        type: [String],
+        optional: true
+    },
+    thumbsDown: {
+        type: [String],
+        optional: true
     },
     title: {
         type: String},

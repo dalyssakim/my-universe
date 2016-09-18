@@ -14,17 +14,32 @@
 
 					<div class="mail-info">
                         <div class="pull-left">
-                                <span class=""><i class="fa fa-calendar-o"></i>8/28/2013</span>
-                                <span class=""><i class="fa fa-user"></i>{{expression.userName}}</span>
-                                <span class=""><i class="glyphicon glyphicon-bookmark"></i><a href="http://localhost:8080/Utilities/xmlKnowledgeBase23/index.asp?displayCategory=yes&id=Gateway">Gateway</a></span>
-                                <span class=""><i class="fa fa-star"></i>33 views </span>
+                                <span class=""><i class="fa fa-calendar-o"></i>  {{expression.createdAtTime}} {{expression.createdAtDate}}</span>
+                                <span class=""><i class="fa fa-user"></i>  {{expression.userName}}</span>
+                               	<span class=""><i class="fa fa-star"></i>  {{expression.viewCount}}</span>
                         </div>
 					</div>
                     <br><br>
                     <div class="divider"></div>
                     <br><br>
 					<div class="mail-content">
+						<div class="article-content">
 						{{expression.content}}
+						</div>
+						<div class="thumbs">
+							<div class="thumbs-icon-block">
+								<div class="thumbs-count">
+								<span id="thumbsUp" class="glyphicon glyphicon-thumbs-up"></span>
+								</div>
+								<span class="thumbs-count">{{expression.thumbsUpCount}}</span>
+							</div>
+							<div class="thumbs-icon-block">
+								<div class="thumbs-count">
+								<span id="thumbsDown" class="glyphicon glyphicon-thumbs-down"></span>
+								</div>
+								<span class="thumbs-count">{{expression.thumbsDownCount}}</span>
+							</div>
+						</div>
 					</div>
 </div>
 </div>

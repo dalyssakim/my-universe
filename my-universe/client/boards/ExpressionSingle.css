@@ -63,10 +63,37 @@ margin-right: 10px;
 }
 
 .expressionSingle .mail-content {
-    min-height: 500px;
     margin-left: 10px; 
+    height: auto;
 }
 
 .divider {
     border-bottom: 2px solid #E5E5E5;
+}
+
+.thumbs {  
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  display: table;
+  clear: both;
+}  
+
+.thumbs .glyphicon {
+    font-size: 50px;
+    padding : 30px 30px 30px 15px;
+    cursor: pointer;
+}
+
+.thumbs .thumbs-icon-block {
+  float : left;
+  width: 50%;
+  height: 100%;
+}
+
+.thums .thumbs-count {
+    display : block;
 }
